@@ -523,3 +523,111 @@ span {
     color: white;
 }
 
+@media (max-width:1285){
+
+    html {
+        font-size: 55%;
+    }
+
+    .services-container {
+        padding-bottom: 7rem;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0 5rem;
+    }
+}
+
+@media(max-width:991px) {
+    header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .timeline-items::before{
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+    .timeline-dot {
+        left: 0;
+    }
+    .services {
+        padding-bottom: 7rem;
+    }
+    .testimonials .wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .contact form {
+        flex-direction: column;
+    }
+    .footer {
+        padding: 2rem 3%;
+    }  
+
+}
+
+
+    @media (max-width: 895px) {
+        #menu-icon {
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+    
+        .navbar {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 50%;
+            padding: 1rem 3%;
+            background: violet;
+            backdrop-filter: blur(20px);
+            border-bottom-left-radius: 2rem;
+            border-left: 2px solid var(--main-color);
+            border-bottom: 2px solid var(--main-color);
+            font-size: 2rem;
+            margin: 3rem 0;
+            color: white;
+        }
+    
+        .navbar.active {
+            display: block;
+        }
+    
+        .home {
+            flex-direction: column-reverse;
+            margin: 5rem 4rem;
+        }
+    
+        .home-content h3 {
+            font-size: 2.6rem;
+        }
+    
+        .home-content h1 {
+            font-size: 8rem;
+            margin-top: 3rem;
+        }
+    
+        .home-content p {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    
+        .home-img img {
+            width: 56vw;
+        }
+    }
+   
+    
+

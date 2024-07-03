@@ -125,6 +125,7 @@ span {
 
 .home-img {
     border-radius: 50%;
+
 }
 
 .home-img img {
@@ -625,7 +626,15 @@ span {
         }
     
         .home-img img {
-            width: 56vw;
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 428px) { /* Ancho máximo del iPhone 14 Pro Max */
+        .home-img img {
+            margin: 0;
+            padding: 0;
+            /* Ajusta otras propiedades según tus necesidades */
         }
     }
    

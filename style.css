@@ -64,6 +64,7 @@ body {
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
+    font-size: 15px;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
@@ -576,6 +577,78 @@ span {
 
 }
 
+
+.projects {
+    padding: 100px 15px;
+    background: var(--second-bg-color);
+}
+
+.projects .heading {
+    margin-bottom: 5rem;
+}
+
+.project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.project-item {
+    background-color: var(--bg-color);
+    border: 3px solid var(--main-color);
+    padding: 20px;
+    border-radius: 4rem;
+    box-shadow: 0 0 10px var(--main-color);
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.project-img img,
+.project-img video {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.project-content {
+    margin-top: 1rem;
+}
+
+.project-content h3 {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.project-content p {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.project-content .btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    font-weight: 600;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.project-content .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px var(--main-color);
+}
 
     @media (max-width: 895px) {
         #menu-icon {

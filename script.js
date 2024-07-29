@@ -30,16 +30,3 @@ menuIcon.onclick = () => {
     navbar.classList.toggle('active');
 };
 
-function handleFormSubmission(event) {
-    event.preventDefault(); // Evita que el formulario se envíe automáticamente
-
-    // Realiza una acción adicional si es necesario antes de enviar (opcional)
-
-    // Simula un tiempo de espera antes de redirigir (opcional)
-    setTimeout(function() {
-        // Redirige a la página de agradecimiento o a cualquier página deseada
-        window.location.href = "";
-    }, 1000); // Espera 1 segundo (1000 milisegundos) antes de redirigir, ajusta según necesites
-
-    return false; // Evita el envío del formulario por defecto
-}

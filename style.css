@@ -423,6 +423,7 @@ span {
     width: 50px;
 }
 
+
 .contact h2 {
     margin-bottom: 3rem;
     color: white;
@@ -433,7 +434,7 @@ span {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 5rem auto;
+    
     text-align: center;
 }
 
@@ -523,6 +524,9 @@ span {
     text-align: center;
     font-size: 16px ;
     color: white;
+}
+.contact {
+    margin-bottom: 10rem; /* Ajusta según lo necesario */
 }
 
 @media (max-width:1285){
@@ -648,6 +652,83 @@ span {
 .project-content .btn:hover {
     transform: scale(1.05);
     box-shadow: 0 0 50px var(--main-color);
+}
+
+/* Sección de Tecnologías */
+.technologies {
+    background-color: var(--bg-color);
+    padding-bottom: -30%; /* Reducir el padding inferior */
+    margin-bottom: -400px;
+   
+    
+    
+}
+
+.technologies .heading {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 60px; /* Reducimos el margen inferior del título */
+    
+}
+
+/* Contenedor de los logos */
+.tech-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+  
+   
+}
+
+/* Estilo para cada logo */
+.tech-item {
+    width: 80px; /* Reducimos el tamaño de los logos */
+    
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de rotación continua con pausa */
+.tech-item img {
+    width: 100%;
+   
+    animation: rotate 5s infinite ease-in-out;
+}
+
+/* Animación de rotación con pausa */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    45% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    95% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.tech-item:hover {
+    transform: scale(1.6); 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .tech-container {
+        gap: 15px; /* Reducimos más el espacio entre logos en pantallas pequeñas */
+    }
+    .tech-item {
+        width: 70px;
+        height: 70px;
+    }
 }
 
     @media (max-width: 895px) {

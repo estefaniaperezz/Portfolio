@@ -594,8 +594,9 @@ span {
 .project-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2rem; /* Espacio entre elementos */
     justify-content: center;
+    align-items: flex-start; /* Asegura que los elementos inicien desde la parte superior */
 }
 
 .project-item {
@@ -605,8 +606,15 @@ span {
     border-radius: 4rem;
     box-shadow: 0 0 10px var(--main-color);
     max-width: 400px;
+    min-height: 500px; /* Define una altura mínima */
+    display: flex;
+    flex-direction: column; /* Para alinear contenido interno */
+    justify-content: space-between; /* Distribuye el contenido uniformemente */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin-bottom: 2rem;
 }
+
+
 
 .project-item:hover {
     transform: scale(1.05);
@@ -616,9 +624,10 @@ span {
 .project-img img,
 .project-img video {
     width: 100%;
+    height: 200px; /* Define la misma altura para todas las imágenes y videos */
+    object-fit: cover; /* Asegura que las imágenes no se deformen */
     border-radius: 1rem;
 }
-
 .project-content {
     margin-top: 1rem;
 }
